@@ -1,0 +1,168 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      5842,        158]
+NotebookOptionsPosition[      5370,        136]
+NotebookOutlinePosition[      5885,        158]
+CellTagsIndexPosition[      5842,        155]
+WindowFrame->Palette*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ DynamicModuleBox[{$CellContext`nb$$ = NotebookObject[
+   FrontEndObject[
+    LinkObject["ftx_shm", 65, 3]], 
+   37], $CellContext`NameCellTag$$, $CellContext`SetCellTag$$, \
+$CellContext`CellRef$$, $CellContext`TargetRef$$ = ""}, 
+  StyleBox[
+   TagBox[GridBox[{
+      {
+       TagBox[
+        TemplateBox[{InterpretationBox[
+           StyleBox[
+            
+            GraphicsBox[{}, ImageSize -> {2, 0}, BaselinePosition -> 
+             Baseline], "CacheGraphics" -> False], 
+           Spacer[2]],DynamicBox[
+           FEPrivate`FrontEndResource["FEBitmaps", "ManipulatePasteIcon"], 
+           ImageSizeCache -> {13., {3., 10.}}],DynamicBox[
+           
+           ToBoxes[$CellContext`nb$$ = SelectedNotebook[]; 
+            If[$CellContext`nb$$ === $Failed, "", 
+              (If[StringLength[#] >= 10, 
+               StringJoin[
+                StringTake[#, 10], "\[Ellipsis]"], #]& )[
+               Replace[WindowTitle, 
+                AbsoluteOptions[$CellContext`nb$$, WindowTitle]]]], 
+            StandardForm], ImageSizeCache -> {61., {0., 8.}}]},
+         "RowWithSeparator"],
+        Deploy,
+        DefaultBaseStyle->"Deploy"]},
+      {
+       TemplateBox[{ButtonBox[
+          StyleBox[
+          "\"Clear\"", StripOnInput -> False, 
+           FontVariations -> {"Underline" -> True}], Appearance -> 
+          "Frameless", 
+          ButtonFunction :> (
+           SelectionMove[$CellContext`nb$$, All, 
+             Cell]; $CellContext`SetCellTag$$[{}]), Evaluator -> Automatic, 
+          ImageSize -> 33, Method -> "Preemptive"],"\" Cell Tag\""},
+        "RowDefault"]},
+      {
+       TemplateBox[{InterpretationBox[
+          StyleBox[
+           GraphicsBox[{}, ImageSize -> {5, 0}, BaselinePosition -> Baseline],
+            "CacheGraphics" -> False], 
+          Spacer[5]],ButtonBox[
+         "\"Target\"", Appearance -> "Palette", 
+          ButtonFunction :> (SelectionMove[$CellContext`nb$$, All, Cell]; 
+           Module[{$CellContext`cell$ = 
+              NotebookRead[$CellContext`nb$$], $CellContext`tag$}, \
+$CellContext`tag$ = OptionValue[Cell, 
+                Options[$CellContext`cell$], CellTags]; If[
+               Not[
+                
+                StringQ[$CellContext`tag$]], $CellContext`tag$ = \
+$CellContext`NameCellTag$$[$CellContext`cell$]]; \
+$CellContext`SetCellTag$$[$CellContext`tag$]; $CellContext`TargetRef$$ = \
+$CellContext`CellRef$$[$CellContext`cell$, $CellContext`tag$]]), Evaluator -> 
+          Automatic, ImageSize -> 50, Method -> "Preemptive"],ButtonBox[
+         "\"Insert\"", Appearance -> "Palette", ButtonFunction :> 
+          NotebookWrite[$CellContext`nb$$, 
+            TextData[$CellContext`TargetRef$$]], Evaluator -> Automatic, 
+          ImageSize -> 50, Method -> "Preemptive"]},
+        "RowWithSeparator"]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"],
+   StripOnInput->False,
+   FontFamily->"Verdana"],
+  DynamicModuleValues:>{{DownValues[$CellContext`NameCellTag$$] = {HoldPattern[
+         $CellContext`NameCellTag$$[
+          Pattern[$CellContext`cell, 
+           Blank[]]]] :> With[{$CellContext`index = ToString[
+            Hash[
+             First[$CellContext`cell]]]}, 
+         Switch[
+          Part[$CellContext`cell, 2], 
+          Alternatives["DisplayFormulaNumbered", "DisplayFormulaFramed"], 
+          StringJoin["eq: ", $CellContext`index], "Reference", 
+          StringJoin["ref: ", $CellContext`index], 
+          Blank[], $CellContext`index]]}}, {
+    DownValues[$CellContext`SetCellTag$$] = {HoldPattern[
+         $CellContext`SetCellTag$$[
+          Pattern[$CellContext`tag$, 
+           Blank[]]]] :> SetOptions[
+         NotebookSelection[$CellContext`nb$$], 
+         CellTags -> $CellContext`tag$]}}, {
+    DownValues[$CellContext`CellRef$$] = {HoldPattern[
+         $CellContext`CellRef$$[
+          Pattern[$CellContext`cell, 
+           Blank[]], 
+          Pattern[$CellContext`tag, 
+           Blank[]]]] :> Switch[
+         Part[$CellContext`cell, 2], 
+         Alternatives["DisplayFormulaNumbered", "DisplayFormulaFramed"], {
+         "Eq. (", 
+          CounterBox["DisplayFormulaNumbered", $CellContext`tag], ")"}, 
+         "Reference", {"[", 
+          CounterBox["Reference", $CellContext`tag], "]"}, 
+         Blank[], {}]}}}]],
+ CellMargins->{{0, 0}, {0, 0}},
+ CellBracketOptions->{"Color"->RGBColor[0.269993, 0.308507, 0.6]},
+ CellHorizontalScrolling->True,
+ PageBreakAbove->True,
+ PageBreakWithin->False,
+ ShowAutoStyles->True,
+ LineSpacing->{1.25, 0},
+ AutoItalicWords->{},
+ ScriptMinSize->9,
+ ShowStringCharacters->False,
+ FontFamily:>CurrentValue["PanelFontFamily"],
+ FontSize:>CurrentValue["PanelFontSize"]]
+},
+ClosingAutoSave->False,
+Editable->False,
+WindowSize->{Fit, Fit},
+WindowMargins->{{Automatic, 22}, {Automatic, 3}},
+WindowFrame->"Palette",
+WindowElements->{},
+WindowFrameElements->"CloseBox",
+FrontEndVersion->"9.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (November 20, \
+2012)",
+StyleDefinitions->"Palette.nb",
+$CellContext`ClosingSaveDialog -> False
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 4808, 114, 62, InheritFromParent,
+ PageBreakAbove->True,
+ PageBreakWithin->False]
+}
+]
+*)
+
+(* End of internal cache information *)
+
